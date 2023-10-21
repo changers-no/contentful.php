@@ -2,6 +2,7 @@
     "name": "changers-no/contentful",
     "description": "SDK for the Contentful Content Delivery API",
     "type": "library",
+    "minimum-stability": "dev",
     "license": "MIT",
     "require": {
         "php": "^8.2",
