@@ -1,5 +1,5 @@
 {
-    "name": "contentful/contentful",
+    "name": "changers-no/contentful",
     "description": "SDK for the Contentful Content Delivery API",
     "type": "library",
     "license": "MIT",
