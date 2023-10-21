@@ -39,7 +39,7 @@ function clean_headers_array(Request $request)
 // The VCR needs to be loaded before the Client is loaded for the first time or it will fail
 VCR::configure()
     ->setMode('once')
-//    ->setMode('new_episodes')
+    //    ->setMode('new_episodes')
     ->setStorage('json')
     ->enableLibraryHooks(['stream_wrapper', 'curl'])
     ->setCassettePath('tests/Recordings')
@@ -49,8 +49,7 @@ VCR::configure()
 
         return $first === $second;
     })
-    ->enableRequestMatchers(['method', 'url', 'query_string', 'host', 'body', 'post_fields', 'custom_headers'])
-;
+    ->enableRequestMatchers(['method', 'url', 'query_string', 'host', 'body', 'post_fields', 'custom_headers']);
 
 VCR::turnOn();
 VCR::turnOff();
